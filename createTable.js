@@ -4,14 +4,14 @@ let mysql = require('mysql2');
 // we connect to pg using pool we requested
 let con = mysql.createConnection({
   host: "localhost",
-  user: "raus",
-  password: "raus123",
-  database: "raus",
+  user: "ghidyon",
+  password: "password",
+  database: "menteedb",
   multipleStatements: true
 });
 
 
-con.connect(function(err) {
+con.connect(err => {
 
   if (err) throw err;
   console.log("Connected!");
